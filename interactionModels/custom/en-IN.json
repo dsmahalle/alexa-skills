@@ -1,0 +1,1275 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "smarter home",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "turn",
+          "slots": [
+            {
+              "name": "status",
+              "type": "status"
+            },
+            {
+              "name": "device_name",
+              "type": "devices"
+            },
+            {
+              "name": "types",
+              "type": "types"
+            },
+            {
+              "name": "zone",
+              "type": "zone_list"
+            },
+            {
+              "name": "numbers",
+              "type": "numbers"
+            }
+          ],
+          "samples": [
+            "set {types} in {zone} to {numbers}",
+            "start {types} to {numbers}",
+            "start {device_name} to {numbers}",
+            "set {device_name} to {numbers}",
+            "set {types} to {numbers}",
+            "turn {status} {types} in {zone}",
+            "turn {status}  {types}",
+            "turn {status} {device_name} "
+          ]
+        },
+        {
+          "name": "scenes",
+          "slots": [
+            {
+              "name": "scene",
+              "type": "scenes"
+            },
+            {
+              "name": "status",
+              "type": "status"
+            },
+            {
+              "name": "zone",
+              "type": "zone_list"
+            }
+          ],
+          "samples": [
+            " {scene} in {zone}",
+            "{status} {scene} in {zone}",
+            "{status} {scene}",
+            "{scene}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "2",
+              "name": {
+                "value": "stop",
+                "synonyms": [
+                  "terminate"
+                ]
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "start",
+                "synonyms": [
+                  "initiate"
+                ]
+              }
+            },
+            {
+              "id": "0",
+              "name": {
+                "value": "OFF",
+                "synonyms": [
+                  "deactivate",
+                  "off"
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "ON",
+                "synonyms": [
+                  "activate",
+                  "on"
+                ]
+              }
+            }
+          ],
+          "name": "status"
+        },
+        {
+          "values": [
+            {
+              "id": "4",
+              "name": {
+                "value": "sara\u0027s bedroom"
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "master bedroom"
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "bedroom"
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "livingroom",
+                "synonyms": [
+                  "hall",
+                  "livingroom"
+                ]
+              }
+            }
+          ],
+          "name": "zone_list"
+        },
+        {
+          "values": [
+            {
+              "id": "1",
+              "name": {
+                "value": "Good morning"
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "Good night"
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "Good afternoon"
+              }
+            },
+            {
+              "id": "6",
+              "name": {
+                "value": "home lights"
+              }
+            },
+            {
+              "id": "7",
+              "name": {
+                "value": "arm house"
+              }
+            },
+            {
+              "id": "8",
+              "name": {
+                "value": "lock door"
+              }
+            },
+            {
+              "id": "5",
+              "name": {
+                "value": "entry scene"
+              }
+            }
+          ],
+          "name": "scenes"
+        },
+        {
+          "values": [
+            {
+              "id": "6",
+              "name": {
+                "value": "CURTAIN",
+                "synonyms": [
+                  "all curtains"
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "LIGHT",
+                "synonyms": [
+                  "all lights"
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "FAN",
+                "synonyms": [
+                  "all fans"
+                ]
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "AC",
+                "synonyms": [
+                  "all acs"
+                ]
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "DIMMER"
+              }
+            }
+          ],
+          "name": "types"
+        },
+        {
+          "values": [
+            {
+              "id": "8",
+              "name": {
+                "value": "livingroom footlight"
+              }
+            },
+            {
+              "id": "7",
+              "name": {
+                "value": "livingroom photolight"
+              }
+            },
+            {
+              "id": "6",
+              "name": {
+                "value": "livingroom tvlight"
+              }
+            },
+            {
+              "id": "5",
+              "name": {
+                "value": "livingroom mainlight"
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "masterbed footlight"
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "masterbed photolight"
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "masterbed tvlight"
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "masterbed main light"
+              }
+            },
+            {
+              "id": "58",
+              "name": {
+                "value": "livingroom ac one"
+              }
+            },
+            {
+              "id": "61",
+              "name": {
+                "value": "masterbed ac"
+              }
+            },
+            {
+              "id": "63",
+              "name": {
+                "value": "livingroom ac two"
+              }
+            },
+            {
+              "id": "17",
+              "name": {
+                "value": "masterbed lock"
+              }
+            },
+            {
+              "id": "18",
+              "name": {
+                "value": "bedroom lock"
+              }
+            },
+            {
+              "id": "16",
+              "name": {
+                "value": "livingroom lock"
+              }
+            }
+          ],
+          "name": "devices"
+        },
+        {
+          "values": [
+            {
+              "id": "0",
+              "name": {
+                "value": "CLOSE"
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "OPEN"
+              }
+            }
+          ],
+          "name": "curtain_statuses"
+        },
+        {
+          "values": [
+            {
+              "id": "2",
+              "name": {
+                "value": "2",
+                "synonyms": [
+                  "Two"
+                ]
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "3",
+                "synonyms": [
+                  "Three"
+                ]
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "4",
+                "synonyms": [
+                  "Four"
+                ]
+              }
+            },
+            {
+              "id": "5",
+              "name": {
+                "value": "5",
+                "synonyms": [
+                  "Five"
+                ]
+              }
+            },
+            {
+              "id": "6",
+              "name": {
+                "value": "6",
+                "synonyms": [
+                  "Six"
+                ]
+              }
+            },
+            {
+              "id": "7",
+              "name": {
+                "value": "7",
+                "synonyms": [
+                  "Seven"
+                ]
+              }
+            },
+            {
+              "id": "8",
+              "name": {
+                "value": "8",
+                "synonyms": [
+                  "Eight"
+                ]
+              }
+            },
+            {
+              "id": "9",
+              "name": {
+                "value": "9",
+                "synonyms": [
+                  "Nine"
+                ]
+              }
+            },
+            {
+              "id": "10",
+              "name": {
+                "value": "10",
+                "synonyms": [
+                  "Ten"
+                ]
+              }
+            },
+            {
+              "id": "11",
+              "name": {
+                "value": "11",
+                "synonyms": [
+                  "Eleven"
+                ]
+              }
+            },
+            {
+              "id": "12",
+              "name": {
+                "value": "12",
+                "synonyms": [
+                  "Twelve"
+                ]
+              }
+            },
+            {
+              "id": "13",
+              "name": {
+                "value": "13",
+                "synonyms": [
+                  "Thirteen"
+                ]
+              }
+            },
+            {
+              "id": "14",
+              "name": {
+                "value": "14",
+                "synonyms": [
+                  "Fourteen"
+                ]
+              }
+            },
+            {
+              "id": "15",
+              "name": {
+                "value": "15",
+                "synonyms": [
+                  "Fifteen"
+                ]
+              }
+            },
+            {
+              "id": "16",
+              "name": {
+                "value": "16",
+                "synonyms": [
+                  "Sixteen"
+                ]
+              }
+            },
+            {
+              "id": "17",
+              "name": {
+                "value": "17",
+                "synonyms": [
+                  "Seventeen"
+                ]
+              }
+            },
+            {
+              "id": "18",
+              "name": {
+                "value": "18",
+                "synonyms": [
+                  "Eighteen"
+                ]
+              }
+            },
+            {
+              "id": "19",
+              "name": {
+                "value": "19",
+                "synonyms": [
+                  "Nineteen"
+                ]
+              }
+            },
+            {
+              "id": "20",
+              "name": {
+                "value": "20",
+                "synonyms": [
+                  "Twenty"
+                ]
+              }
+            },
+            {
+              "id": "21",
+              "name": {
+                "value": "21",
+                "synonyms": [
+                  "Twenty One"
+                ]
+              }
+            },
+            {
+              "id": "22",
+              "name": {
+                "value": "22",
+                "synonyms": [
+                  "Twenty Two"
+                ]
+              }
+            },
+            {
+              "id": "23",
+              "name": {
+                "value": "23",
+                "synonyms": [
+                  "Twenty Three"
+                ]
+              }
+            },
+            {
+              "id": "24",
+              "name": {
+                "value": "24",
+                "synonyms": [
+                  "Twenty Four"
+                ]
+              }
+            },
+            {
+              "id": "25",
+              "name": {
+                "value": "25",
+                "synonyms": [
+                  "Twenty Five"
+                ]
+              }
+            },
+            {
+              "id": "26",
+              "name": {
+                "value": "26",
+                "synonyms": [
+                  "Twenty Six"
+                ]
+              }
+            },
+            {
+              "id": "27",
+              "name": {
+                "value": "27",
+                "synonyms": [
+                  "Twenty Seven"
+                ]
+              }
+            },
+            {
+              "id": "28",
+              "name": {
+                "value": "28",
+                "synonyms": [
+                  "Twenty Eight"
+                ]
+              }
+            },
+            {
+              "id": "29",
+              "name": {
+                "value": "29",
+                "synonyms": [
+                  "Twenty Nine"
+                ]
+              }
+            },
+            {
+              "id": "30",
+              "name": {
+                "value": "30",
+                "synonyms": [
+                  "Thirty"
+                ]
+              }
+            },
+            {
+              "id": "31",
+              "name": {
+                "value": "31",
+                "synonyms": [
+                  "Thirty One"
+                ]
+              }
+            },
+            {
+              "id": "32",
+              "name": {
+                "value": "32",
+                "synonyms": [
+                  "Thirty Two"
+                ]
+              }
+            },
+            {
+              "id": "33",
+              "name": {
+                "value": "33",
+                "synonyms": [
+                  "Thirty Three"
+                ]
+              }
+            },
+            {
+              "id": "34",
+              "name": {
+                "value": "34",
+                "synonyms": [
+                  "Thirty Four"
+                ]
+              }
+            },
+            {
+              "id": "35",
+              "name": {
+                "value": "35",
+                "synonyms": [
+                  "Thirty Five"
+                ]
+              }
+            },
+            {
+              "id": "36",
+              "name": {
+                "value": "36",
+                "synonyms": [
+                  "Thirty Six"
+                ]
+              }
+            },
+            {
+              "id": "37",
+              "name": {
+                "value": "37",
+                "synonyms": [
+                  "Thirty Seven"
+                ]
+              }
+            },
+            {
+              "id": "38",
+              "name": {
+                "value": "38",
+                "synonyms": [
+                  "Thirty Eight"
+                ]
+              }
+            },
+            {
+              "id": "39",
+              "name": {
+                "value": "39",
+                "synonyms": [
+                  "Thirty Nine"
+                ]
+              }
+            },
+            {
+              "id": "40",
+              "name": {
+                "value": "40",
+                "synonyms": [
+                  "Forty"
+                ]
+              }
+            },
+            {
+              "id": "41",
+              "name": {
+                "value": "41",
+                "synonyms": [
+                  "Forty One"
+                ]
+              }
+            },
+            {
+              "id": "42",
+              "name": {
+                "value": "42",
+                "synonyms": [
+                  "Forty Two"
+                ]
+              }
+            },
+            {
+              "id": "43",
+              "name": {
+                "value": "43",
+                "synonyms": [
+                  "Forty Three"
+                ]
+              }
+            },
+            {
+              "id": "44",
+              "name": {
+                "value": "44",
+                "synonyms": [
+                  "Forty Four"
+                ]
+              }
+            },
+            {
+              "id": "45",
+              "name": {
+                "value": "45",
+                "synonyms": [
+                  "Forty Five"
+                ]
+              }
+            },
+            {
+              "id": "46",
+              "name": {
+                "value": "46",
+                "synonyms": [
+                  "Forty Six"
+                ]
+              }
+            },
+            {
+              "id": "47",
+              "name": {
+                "value": "47",
+                "synonyms": [
+                  "Forty Seven"
+                ]
+              }
+            },
+            {
+              "id": "48",
+              "name": {
+                "value": "48",
+                "synonyms": [
+                  "Forty Eight"
+                ]
+              }
+            },
+            {
+              "id": "49",
+              "name": {
+                "value": "49",
+                "synonyms": [
+                  "Forty Nine"
+                ]
+              }
+            },
+            {
+              "id": "50",
+              "name": {
+                "value": "50",
+                "synonyms": [
+                  "Fifty"
+                ]
+              }
+            },
+            {
+              "id": "51",
+              "name": {
+                "value": "51",
+                "synonyms": [
+                  "Fifty One"
+                ]
+              }
+            },
+            {
+              "id": "52",
+              "name": {
+                "value": "52",
+                "synonyms": [
+                  "Fifty Two"
+                ]
+              }
+            },
+            {
+              "id": "53",
+              "name": {
+                "value": "53",
+                "synonyms": [
+                  "Fifty Three"
+                ]
+              }
+            },
+            {
+              "id": "54",
+              "name": {
+                "value": "54",
+                "synonyms": [
+                  "Fifty Four"
+                ]
+              }
+            },
+            {
+              "id": "55",
+              "name": {
+                "value": "55",
+                "synonyms": [
+                  "Fifty Five"
+                ]
+              }
+            },
+            {
+              "id": "56",
+              "name": {
+                "value": "56",
+                "synonyms": [
+                  "Fifty Six"
+                ]
+              }
+            },
+            {
+              "id": "57",
+              "name": {
+                "value": "57",
+                "synonyms": [
+                  "Fifty Seven"
+                ]
+              }
+            },
+            {
+              "id": "58",
+              "name": {
+                "value": "58",
+                "synonyms": [
+                  "Fifty Eight"
+                ]
+              }
+            },
+            {
+              "id": "59",
+              "name": {
+                "value": "59",
+                "synonyms": [
+                  "Fifty Nine"
+                ]
+              }
+            },
+            {
+              "id": "60",
+              "name": {
+                "value": "60",
+                "synonyms": [
+                  "Sixty"
+                ]
+              }
+            },
+            {
+              "id": "61",
+              "name": {
+                "value": "61",
+                "synonyms": [
+                  "Sixty One"
+                ]
+              }
+            },
+            {
+              "id": "62",
+              "name": {
+                "value": "62",
+                "synonyms": [
+                  "Sixty Two"
+                ]
+              }
+            },
+            {
+              "id": "63",
+              "name": {
+                "value": "63",
+                "synonyms": [
+                  "Sixty Three"
+                ]
+              }
+            },
+            {
+              "id": "64",
+              "name": {
+                "value": "64",
+                "synonyms": [
+                  "Sixty Four"
+                ]
+              }
+            },
+            {
+              "id": "65",
+              "name": {
+                "value": "65",
+                "synonyms": [
+                  "Sixty Five"
+                ]
+              }
+            },
+            {
+              "id": "66",
+              "name": {
+                "value": "66",
+                "synonyms": [
+                  "Sixty Six"
+                ]
+              }
+            },
+            {
+              "id": "67",
+              "name": {
+                "value": "67",
+                "synonyms": [
+                  "Sixty Seven"
+                ]
+              }
+            },
+            {
+              "id": "68",
+              "name": {
+                "value": "68",
+                "synonyms": [
+                  "Sixty Eight"
+                ]
+              }
+            },
+            {
+              "id": "69",
+              "name": {
+                "value": "69",
+                "synonyms": [
+                  "Sixty Nine"
+                ]
+              }
+            },
+            {
+              "id": "70",
+              "name": {
+                "value": "70",
+                "synonyms": [
+                  "Seventy"
+                ]
+              }
+            },
+            {
+              "id": "71",
+              "name": {
+                "value": "71",
+                "synonyms": [
+                  "Seventy One"
+                ]
+              }
+            },
+            {
+              "id": "72",
+              "name": {
+                "value": "72",
+                "synonyms": [
+                  "Seventy Two"
+                ]
+              }
+            },
+            {
+              "id": "73",
+              "name": {
+                "value": "73",
+                "synonyms": [
+                  "Seventy Three"
+                ]
+              }
+            },
+            {
+              "id": "74",
+              "name": {
+                "value": "74",
+                "synonyms": [
+                  "Seventy Four"
+                ]
+              }
+            },
+            {
+              "id": "75",
+              "name": {
+                "value": "75",
+                "synonyms": [
+                  "Seventy Five"
+                ]
+              }
+            },
+            {
+              "id": "76",
+              "name": {
+                "value": "76",
+                "synonyms": [
+                  "Seventy Six"
+                ]
+              }
+            },
+            {
+              "id": "77",
+              "name": {
+                "value": "77",
+                "synonyms": [
+                  "Seventy Seven"
+                ]
+              }
+            },
+            {
+              "id": "78",
+              "name": {
+                "value": "78",
+                "synonyms": [
+                  "Seventy Eight"
+                ]
+              }
+            },
+            {
+              "id": "79",
+              "name": {
+                "value": "79",
+                "synonyms": [
+                  "Seventy Nine"
+                ]
+              }
+            },
+            {
+              "id": "80",
+              "name": {
+                "value": "80",
+                "synonyms": [
+                  "Eighty"
+                ]
+              }
+            },
+            {
+              "id": "81",
+              "name": {
+                "value": "81",
+                "synonyms": [
+                  "Eighty One"
+                ]
+              }
+            },
+            {
+              "id": "82",
+              "name": {
+                "value": "82",
+                "synonyms": [
+                  "Eighty Two"
+                ]
+              }
+            },
+            {
+              "id": "83",
+              "name": {
+                "value": "83",
+                "synonyms": [
+                  "Eighty Three"
+                ]
+              }
+            },
+            {
+              "id": "84",
+              "name": {
+                "value": "84",
+                "synonyms": [
+                  "Eighty Four"
+                ]
+              }
+            },
+            {
+              "id": "85",
+              "name": {
+                "value": "85",
+                "synonyms": [
+                  "Eighty Five"
+                ]
+              }
+            },
+            {
+              "id": "86",
+              "name": {
+                "value": "86",
+                "synonyms": [
+                  "Eighty Six"
+                ]
+              }
+            },
+            {
+              "id": "87",
+              "name": {
+                "value": "87",
+                "synonyms": [
+                  "Eighty Seven"
+                ]
+              }
+            },
+            {
+              "id": "88",
+              "name": {
+                "value": "88",
+                "synonyms": [
+                  "Eighty Eight"
+                ]
+              }
+            },
+            {
+              "id": "89",
+              "name": {
+                "value": "89",
+                "synonyms": [
+                  "Eighty Nine"
+                ]
+              }
+            },
+            {
+              "id": "90",
+              "name": {
+                "value": "90",
+                "synonyms": [
+                  "Ninety"
+                ]
+              }
+            },
+            {
+              "id": "91",
+              "name": {
+                "value": "91",
+                "synonyms": [
+                  "Ninety One"
+                ]
+              }
+            },
+            {
+              "id": "92",
+              "name": {
+                "value": "92",
+                "synonyms": [
+                  "Ninety Two"
+                ]
+              }
+            },
+            {
+              "id": "93",
+              "name": {
+                "value": "93",
+                "synonyms": [
+                  "Ninety Three"
+                ]
+              }
+            },
+            {
+              "id": "94",
+              "name": {
+                "value": "94",
+                "synonyms": [
+                  "Ninety Four"
+                ]
+              }
+            },
+            {
+              "id": "95",
+              "name": {
+                "value": "95",
+                "synonyms": [
+                  "Ninety Five"
+                ]
+              }
+            },
+            {
+              "id": "96",
+              "name": {
+                "value": "96",
+                "synonyms": [
+                  "Ninety Six"
+                ]
+              }
+            },
+            {
+              "id": "97",
+              "name": {
+                "value": "97",
+                "synonyms": [
+                  "Ninety Seven"
+                ]
+              }
+            },
+            {
+              "id": "98",
+              "name": {
+                "value": "98",
+                "synonyms": [
+                  "Ninety Eight"
+                ]
+              }
+            },
+            {
+              "id": "99",
+              "name": {
+                "value": "99",
+                "synonyms": [
+                  "Ninety Nine"
+                ]
+              }
+            },
+            {
+              "id": "100",
+              "name": {
+                "value": "100",
+                "synonyms": [
+                  "Hundred"
+                ]
+              }
+            }
+          ],
+          "name": "numbers"
+        }
+      ]
+    }
+  },
+  "version": "41"
+}

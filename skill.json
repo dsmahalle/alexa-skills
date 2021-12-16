@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:716053400700:function:919c72b7-efa7-4f8a-bafc-01ea3509ea83:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:716053400700:function:919c72b7-efa7-4f8a-bafc-01ea3509ea83:Release_0"
+            }
+          },
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:716053400700:function:919c72b7-efa7-4f8a-bafc-01ea3509ea83:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:716053400700:function:919c72b7-efa7-4f8a-bafc-01ea3509ea83:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "en-IN": {
+          "name": "advaint home1"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}
